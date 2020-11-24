@@ -103,7 +103,7 @@ void validaCnpj() {
 void orquestrador() {
 
 	//Abertura e tratamento da base
-	FILE* arq = fopen("base900K.txt", "r");	//Ponteiro que aponta para o Arquivo
+	FILE* arq = fopen("BASE.txt", "r");	//Ponteiro que aponta para o Arquivo
 
 	//For que controla quantas linhas serão lidas
 	for (int i = 0; i < 900000; i++) {
