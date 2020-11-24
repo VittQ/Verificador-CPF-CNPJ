@@ -20,8 +20,8 @@ using namespace chrono;
 char arquivo[20]; //variável char para fazer leitura do arquivo
 
 //vetores
-int cpf[100000][20]; //vetor na forma de matriz que armazena os cpfs 
-int cnpj[100000][20]; //vetor na forma de matriz que armazena os cnpjs 
+int cpf[900000][20]; //vetor na forma de matriz que armazena os cpfs 
+int cnpj[900000][20]; //vetor na forma de matriz que armazena os cnpjs 
 
 //contadores
 int qtdCpf = 0; //contador dos cpfs lidos 
@@ -62,7 +62,6 @@ void validaCpf() {
 		cpf[i][9] = v1;
 		cpf[i][10] = v2;
 	}
-
 }
 
 
@@ -107,7 +106,7 @@ void orquestrador() {
 	FILE* arq = fopen("base900K.txt", "r");	//Ponteiro que aponta para o Arquivo
 
 	//For que controla quantas linhas serão lidas
-	for (int i = 0; i < 100000; i++) {
+	for (int i = 0; i < 900000; i++) {
 
 		fscanf(arq, "%s", arquivo);		
 
@@ -115,7 +114,7 @@ void orquestrador() {
 		int flagA = 0;		//flag para o while
 
 		//While que faz a leitura
-		while (arquivo[flagA] != '\0') {
+		while (arquivo[tamanho] != '\0') {
 			tamanho++;			
 			flagA++;		
 		}
