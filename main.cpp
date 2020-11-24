@@ -111,12 +111,12 @@ void orquestrador() {
 		fscanf(arq, "%s", arquivo);		
 
 		int tamanho = 0;	//variavel que guarda o tamanho da linha
-		int flagA = 0;		//flag para o while
+		
 
 		//While que faz a leitura
 		while (arquivo[tamanho] != '\0') {
 			tamanho++;			
-			flagA++;		
+					
 		}
 
 		
